@@ -8,7 +8,7 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://github.com/efenatuyo/bloxflipPredictor/blob/main/LICENSE" target="_blank">
-    <img alt="License: Apache" src="https://img.shields.io/github/license/efenatuyo/Bloxflip Predictor" />
+    <img alt="License: Apache" src="http://www.apache.org/licenses/LICENSE-2.0" />
   </a>
 </p>
 
@@ -48,6 +48,6 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 ## 📝 License
 
 Copyright © 2022 [Xolo](https://github.com/efenatuyo).<br />
-This project is [Apache](https://github.com/efenatuyo/bloxflipPredictor/blob/main/LICENSE) licensed.
+This project is [Apache](http://www.apache.org/licenses/LICENSE-2.0) licensed.
 
 ***
