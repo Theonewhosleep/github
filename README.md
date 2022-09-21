@@ -11,7 +11,7 @@
 
 > Best discord bloxflip predictor. This bloxflip predictor got 3 commands in this moment. Mines, Towers and crash. If you want more commands please just dm me over discord or join my server 
 
-### 🏠 [Homepage](https://github.com/efenatuyo/bloxflipPredictor#README.md#)
+### 🏠 [Homepage](https://github.com/efenatuyo)
 
 ## Preview
 ![image](https://media.discordapp.net/attachments/1017877584849150074/1022089144844959875/unknown.png)
