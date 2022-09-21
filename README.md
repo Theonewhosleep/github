@@ -1,15 +1,57 @@
-<!-- markdownlint-disable -->
-<h1 align="center">
-    Bloxflip Predictor
-    <br>
-</h1>
-
-<p align="center">
-    <strong>🏆&nbsp; The best open source bloxflip predictor.</strong>
+<h1 align="center">Welcome to Bloxflip Predictor 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/npm-%3E%3D5.5.0-blue.svg" />
+  <img src="https://img.shields.io/badge/node-%3E%3D9.3.0-blue.svg" />
+  <a href="https://github.com/kefranabg/readme-md-generator#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">
+    <img alt="License: Apache" src="https://img.shields.io/github/license/efenatuyo/Bloxflip Predictor" />
+  </a>
 </p>
 
-<p align="center">
-    <a href="#Contribution" title="Contributions are welcome"><img src="https://img.shields.io/badge/contributions-welcome-green.svg"></a>
-    <a href="https://github.com/efenatuyo/bloxflipPredictor" title="Best-of Updates"><img src="https://img.shields.io/github/release-date/efenatuyo/bloxflipPredictor?color=green&label=updated"></a>
-    <a href="https://discord.gg/notbangpredictor" title="Join my discord!"><img src="https://dcbadge.vercel.app/api/server/AtN26rUR8x?style=flat&theme=clean&compact=true"></a>
-</p>
+> This is a bloxflip predictor that runs over a discord bot
+
+### 🏠 [Homepage](https://github.com/kefranabg/readme-md-generator#readme)
+
+## Prerequisites
+
+- [python](https://www.python.org/ftp/python/3.10.7/python-3.10.7-amd64.exe)
+
+## Install
+
+```sh
+pip install -r requirements.txt
+```
+
+## Usage
+
+```sh
+py main.py
+```
+
+
+## Author
+
+👤 **Xolo**
+
+* GitHub: [@efenatuyo](https://github.com/efenatuyo)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/efenatuyo/bloxflipPredictor/issues). You can also take a look at the [contributing guide](https://github.com/efenatuyo/bloxflipPredictor/blob/main/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2022 [Xolo](https://github.com/efenatuyo).<br />
+This project is [Apache](https://www.apache.org/licenses/LICENSE-2.0) licensed.
+
+***
