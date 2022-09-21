@@ -12,7 +12,7 @@
   </a>
 </p>
 
-> Best discord bloxflip predictor.
+> Best discord bloxflip predictor. This bloxflip predictor got 3 commands in this moment. Mines, Towers and crash. If you want more commands please just dm me over discord or join my server 
 
 ### 🏠 [Homepage](https://github.com/efenatuyo/bloxflipPredictor#README.md#)
 
