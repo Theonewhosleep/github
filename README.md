@@ -14,11 +14,11 @@
 ### 🏠 [Homepage](https://github.com/efenatuyo)
 
 ### ⭐️ Rewards
-# 10 ⭐️
+## 10 ⭐️
 * Will create more commands
-# 20 ⭐️
+## 20 ⭐️
 * Slash commands
-# 40 ⭐️
+## 40 ⭐️
 * dashboard
 
 ## Preview
