@@ -1,3 +1,4 @@
+@echo off
 Color 02
 Title Installing modules
 Echo =====================
