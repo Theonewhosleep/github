@@ -11,7 +11,7 @@
 <p align="center">
     <a href="#Contribution" title="Contributions are welcome"><img src="https://img.shields.io/badge/contributions-welcome-green.svg"></a>
     <a href="https://github.com/efenatuyo/bloxflipPredictor" title="Best-of Updates"><img src="https://img.shields.io/github/release-date/efenatuyo/bloxflipPredictor?color=green&label=updated"></a>
-    <a href="https://discord.gg/notbangpredictor" title="Join my discord!"><img src="https://dcbadge.vercel.app/api/server/AtN26rUR8x"></a>
+    <a href="https://discord.gg/notbangpredictor" title="Join my discord!"><img src="https://dcbadge.vercel.app/api/server/AtN26rUR8x?style=flat&theme=clean&compact=true"></a>
 </p>
 
 This curated list contains 390 awesome open-source projects with a total of 1.4M stars grouped into 28 categories. All projects are ranked by a project-quality score, which is calculated based on various metrics automatically collected from GitHub and different package managers. If you like to add or update projects, feel free to open an [issue]([https://github.com/ml-tooling/best-of-python/issues/new/choose](https://github.com/ml-tooling/best-of-python/issues/new/choose)), submit a [pull request](https://github.com/ml-tooling/best-of-python/pulls), or directly edit the [projects.yaml](https://github.com/ml-tooling/best-of-python/edit/main/projects.yaml). Contributions are very welcome!
