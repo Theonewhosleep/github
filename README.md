@@ -14,7 +14,7 @@
 ### 🏠 [Homepage](https://github.com/efenatuyo/bloxflipPredictor#README.md#)
 
 ## Preview
-![image][https://media.discordapp.net/attachments/1017877584849150074/1022089144844959875/unknown.png]
+![image](https://media.discordapp.net/attachments/1017877584849150074/1022089144844959875/unknown.png)
 ## Install
 
 ```sh
