@@ -19,7 +19,7 @@
 ## Install
 
 ```sh
-pip install -r requirements.txt
+pip install -r requirements.txt or run install.bat
 ```
 
 ## Usage
