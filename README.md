@@ -25,6 +25,9 @@ pip install -r requirements.txt or run install.bat
 py main.py
 ```
 
+## Setup
+* Paste your discord bots token [line 16]
+* Eidt the chance [line 17]
 
 ## Author
 
