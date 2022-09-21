@@ -4,7 +4,7 @@ Title Installing modules
 Echo =====================
 Echo    Module installer
 Echo =====================
-Echo Press any key to start Basic Scan
+Echo Press any key to start Basic installer
 Pause>nul
 Echo started the module installer...
 pip install -r requirements.txt
