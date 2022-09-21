@@ -7,9 +7,6 @@
   <a href="https://github.com/efenatuyo/bloxflipPredictor/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/efenatuyo/bloxflipPredictor/blob/main/LICENSE" target="_blank">
-    <img alt="License: Apache" src="https://github.com/efenatuyo/bloxflipPredictor/blob/main/LICENSE" />
-  </a>
 </p>
 
 > Best discord bloxflip predictor. This bloxflip predictor got 3 commands in this moment. Mines, Towers and crash. If you want more commands please just dm me over discord or join my server 
