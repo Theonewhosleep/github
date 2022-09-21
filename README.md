@@ -14,12 +14,12 @@
 ### 🏠 [Homepage](https://github.com/efenatuyo)
 
 ### ⭐️ Rewards
-## 10 ⭐️
-* Will create more commands
-## 20 ⭐️
-* Slash commands
-## 40 ⭐️
-* dashboard
+ ## 10 ⭐️
+ * Will create more commands
+  ## 20 ⭐️
+  * Slash commands
+   ## 40 ⭐️
+   * dashboard
 
 ## Preview
 ![image](https://media.discordapp.net/attachments/1017877584849150074/1022089144844959875/unknown.png)
