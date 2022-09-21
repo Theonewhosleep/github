@@ -38,7 +38,7 @@ py main.py
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/efenatuyo/bloxflipPredictor/issues). You can also take a look at the [contributing guide]([https://github.com/efenatuyo/bloxflipPredictor/blob/main/LICENSE](https://github.com/efenatuyo/bloxflipPredictor/blob/main/CONTRIBUTING.md)).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/efenatuyo/bloxflipPredictor/issues).
 
 ## Show your support
 
