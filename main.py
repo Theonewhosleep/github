@@ -165,6 +165,6 @@ async def crash(ctx):
 
 #  Runs the token
 try:
-  client.run("MTAxMzA5Njg0NzY4Mzg4MzA4MA.G3Z-O1.CZkRUzRldGwrtOk6kyrgBnPyZ5ItJ_xXJ1NXug")
+  client.run(TOKEN)
 except:
     os.system('Token invalid or raate limit')
