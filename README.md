@@ -15,11 +15,11 @@
 
 ### ⭐️ Rewards
 - 10 ⭐️
- * Will create more commands
+  * Will create more commands
 - 20 ⭐️
   * Slash commands
 - 40 ⭐️
-   * dashboard
+  * dashboard
 
 ## Preview
 ![image](https://media.discordapp.net/attachments/1017877584849150074/1022089144844959875/unknown.png)
