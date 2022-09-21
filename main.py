@@ -132,9 +132,16 @@ def calculate_multiplier(bombs, msgo):
 
 
 #  Crash could get banned from the api
+def crashsite():
+   games = scraper.get("https://rest-bf.blox.land/games/crash").json()
+   return games
+
 @client.command(name='crash')
 async def crash(ctx):
-    games = scraper.get("https://rest-bf.blox.land/games/crash").json()
+    try:
+     games = crashsite()
+    except Exception as e:
+      await ctx.reply(f'Error scraping **https://rest-bf.blox.land/games/crash** \n please send this to a dev ```{e}```')
     if ctx.author.id != client.user.id:
         ok = await ctx.send(embed=discord.Embed(title="checking api",description="please wait until the bot checks the api",color=0x5ca3ff))
         def lol():
@@ -148,16 +155,36 @@ async def crash(ctx):
             for game in games:
                 chance = chance = 95/game
                 prediction = (1/(1-(chance))+avg)/2
+                if float(chance) >= 80:
+                      chan = True
+                if float(chance) <= 10:
+                      low = True
                 if float(prediction) > 2:
                     color = 0x81fe8f
                 else:
                     color = 0xfe8181
-                desc = f"""
+                if chan == True:
+
+                 desc = f"""
         **Crashpoint:**
         *{prediction:.2f}x*
-        **Chance:**
-        ```{chance:.2f}%```
-        """
+        **High chance:**
+        ```{chance:.2f}%```"""
+                else:
+                 desc = f"""
+        **Crashpoint:**
+        *{prediction:.2f}x*
+        **normal chance:**
+        ```{chance:.2f}%```"""
+                if low == True:
+                 desc = f"""
+        **Crashpoint:**
+        *{prediction:.2f}x*
+        **Low chance:**
+        ```{chance:.2f}%```"""
+
+                  
+
                 em=discord.Embed(description=desc,color=color)
                 await ok.edit(embed=em)
 
@@ -167,4 +194,4 @@ async def crash(ctx):
 try:
   client.run(TOKEN)
 except:
-    os.system('Token invalid or raate limit')
+    os.system('Token invalid or rate limit')
