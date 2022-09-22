@@ -1,6 +1,7 @@
 #  modules that the script uses
 import os
 import random
+from tabnanny import check
 import discord
 import cloudscraper, requests
 from discord.ext import commands
@@ -26,7 +27,7 @@ client.remove_command("help")
 
 # Stuff used for predicter
 scraper = cloudscraper.create_scraper()
-
+ids = []
 
 
 
@@ -34,6 +35,17 @@ scraper = cloudscraper.create_scraper()
 @client.event
 async def on_ready():
   print('Bot is online')
+
+
+
+
+# Check if the round id is used
+def checkid(roundid):
+  if roundid in ids:
+    return False
+  ids.append(roundid)    #  This is not forever it will delete after the file is stopped
+  
+ 
 
 
   
@@ -44,6 +56,8 @@ async def rege(ctx, e):
     a = len(e)
     if a == 36:
       await ctx.send(f'Getting round id {e}')
+      if checkid(e) == False:
+        return 
       await anu(ctx, e)
     else:
       time.sleep(2)
@@ -69,6 +83,8 @@ async def reg(ctx, e):
     a = len(e)
     if a == 36:    #  Checks if the message is 36 characters long
       await ctx.send(f'Getting round id {e}')
+      if checkid() == False:
+        return
       await mines(ctx, e)    #  Starts the mine predictor
     else:
       time.sleep(2)
