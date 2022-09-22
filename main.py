@@ -1,7 +1,6 @@
 #  modules that the script uses
 import os
 import random
-from tabnanny import check
 import discord
 import cloudscraper, requests
 from discord.ext import commands
@@ -27,7 +26,7 @@ client.remove_command("help")
 
 # Stuff used for predicter
 scraper = cloudscraper.create_scraper()
-ids = []
+
 
 
 
@@ -39,25 +38,12 @@ async def on_ready():
 
 
 
-# Check if the round id is used
-def checkid(roundid):
-  if roundid in ids:
-    return False
-  ids.append(roundid)    #  This is not forever it will delete after the file is stopped
-  
- 
-
-
-  
-
 #  Tower predictor
 @client.command(name="towers")
 async def rege(ctx, e):
     a = len(e)
     if a == 36:
       await ctx.send(f'Getting round id {e}')
-      if checkid(e) == False:
-        return 
       await anu(ctx, e)
     else:
       time.sleep(2)
@@ -76,15 +62,13 @@ async def anu(ctx, e):
 
 
 
-  
+
 #  Mines predictor
 @client.command(name="mines")
 async def reg(ctx, e):
     a = len(e)
     if a == 36:    #  Checks if the message is 36 characters long
       await ctx.send(f'Getting round id {e}')
-      if checkid() == False:
-        return
       await mines(ctx, e)    #  Starts the mine predictor
     else:
       time.sleep(2)
@@ -148,16 +132,9 @@ def calculate_multiplier(bombs, msgo):
 
 
 #  Crash could get banned from the api
-def crashsite():
-   games = scraper.get("https://rest-bf.blox.land/games/crash").json()
-   return games
-
 @client.command(name='crash')
 async def crash(ctx):
-    try:
-     games = crashsite()
-    except Exception as e:
-      await ctx.reply(f'Error scraping **https://rest-bf.blox.land/games/crash** \n please send this to a dev ```{e}```')
+    games = scraper.get("https://rest-bf.blox.land/games/crash").json()
     if ctx.author.id != client.user.id:
         ok = await ctx.send(embed=discord.Embed(title="checking api",description="please wait until the bot checks the api",color=0x5ca3ff))
         def lol():
@@ -171,36 +148,16 @@ async def crash(ctx):
             for game in games:
                 chance = chance = 95/game
                 prediction = (1/(1-(chance))+avg)/2
-                if float(chance) >= 80:
-                      chan = True
-                if float(chance) <= 10:
-                      low = True
                 if float(prediction) > 2:
                     color = 0x81fe8f
                 else:
                     color = 0xfe8181
-                if chan == True:
-
-                 desc = f"""
+                desc = f"""
         **Crashpoint:**
         *{prediction:.2f}x*
-        **High chance:**
-        ```{chance:.2f}%```"""
-                else:
-                 desc = f"""
-        **Crashpoint:**
-        *{prediction:.2f}x*
-        **normal chance:**
-        ```{chance:.2f}%```"""
-                if low == True:
-                 desc = f"""
-        **Crashpoint:**
-        *{prediction:.2f}x*
-        **Low chance:**
-        ```{chance:.2f}%```"""
-
-                  
-
+        **Chance:**
+        ```{chance:.2f}%```
+        """
                 em=discord.Embed(description=desc,color=color)
                 await ok.edit(embed=em)
 
@@ -208,6 +165,6 @@ async def crash(ctx):
 
 #  Runs the token
 try:
-  client.run(TOKEN)
+  client.run("MTAxMzA5Njg0NzY4Mzg4MzA4MA.G3Z-O1.CZkRUzRldGwrtOk6kyrgBnPyZ5ItJ_xXJ1NXug")
 except:
-    os.system('Token invalid or rate limit')
+    os.system('Token invalid or raate limit')
