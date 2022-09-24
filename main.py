@@ -7,7 +7,7 @@ from discord.ext import commands
 import time
 import math
 from discord_webhook import DiscordWebhook, DiscordEmbed
-import bloxflippredictor
+from bloxflippredictor import *
 
 
 
@@ -97,8 +97,7 @@ async def mines(ctx, e):
     formel = ((totalsquaresleft - bombs) / (totalsquaresleft))
     totalsquareslefts = 24
     formel2 = ((totalsquareslefts - bombs) / (totalsquareslefts))
-    o = bloxflippredictor.mines
-    output=o.minespredictor(msgo, bombs)
+    output=minespredictor(msgo, bombs)
     end = formel2 * 100
     multiplier = calculate_multiplier(msgo, bombs)
     embed=discord.Embed(title="xolos prediction", description=f" predicting: {e}")
@@ -126,8 +125,7 @@ def calculate_multiplier(bombs, msgo):
 @client.command(name='crash')
 async def crash(ctx):
                 chan = False
-                o = bloxflippredictor.crash
-                varName = o.crashpredictor()
+                varName = crashpredictor()
                 if type(varName) == dict:
                   pass
                 else:
@@ -171,8 +169,7 @@ async def crash(ctx):
 # Roulette predictor
 @client.command(name="roulette")
 async def roulette(ctx):
-  o = bloxflippredictor.roulette
-  output = o.roulettepredictor()
+  output = roulettepredictor()
   embed=discord.Embed(title="xolos prediction", description=f" predicting: roulette")
   embed.add_field(name="roulette", value=output, inline=False)
   await ctx.reply(embed=embed)
