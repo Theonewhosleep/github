@@ -97,7 +97,8 @@ async def mines(ctx, e):
     formel = ((totalsquaresleft - bombs) / (totalsquaresleft))
     totalsquareslefts = 24
     formel2 = ((totalsquareslefts - bombs) / (totalsquareslefts))
-    output=c.minespredictor(msgo, bombs)
+    o = bloxflippredictor.mines
+    output=o.minespredictor(msgo, bombs)
     end = formel2 * 100
     multiplier = calculate_multiplier(msgo, bombs)
     embed=discord.Embed(title="xolos prediction", description=f" predicting: {e}")
