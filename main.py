@@ -1,20 +1,19 @@
 #  modules that the script uses
 import os
-import random
 from tabnanny import check
 import discord
 import cloudscraper, requests
 from discord.ext import commands
 import time
 import math
-import random
 from discord_webhook import DiscordWebhook, DiscordEmbed
+import bloxflippredictor
 
 
 
 
 # Setup/Configs
-TOKEN="paste your discord bot token here"
+TOKEN=""
 bombs=1    #  This is for maths it will show the % when one bomb is used you can make the % with this higher or lower
 
 #  Discord bot definition
@@ -63,15 +62,10 @@ async def rege(ctx, e):
       time.sleep(2)
       await ctx.send('invalid round id')
 async def anu(ctx, e):
-  an = []
-  an.clear()
-  for i in range(8):
-    seq = [":red_circle:", ":red_circle:", ":red_circle:"]
-    a = random.randrange(0, len(seq))
-    seq[a] = ":green_circle:" 
-    an.append(" ".join(seq))
+  o = bloxflippredictor.towers
+  an = o.towerspredictor()
   embed=discord.Embed(title="xolos prediction", description=f"predicting: {e}")
-  embed.add_field(name="towers", value="\n".join(an), inline=False)
+  embed.add_field(name="towers", value=an, inline=False)
   await ctx.send(ctx.author.mention, embed=embed)
 
 
@@ -105,28 +99,7 @@ async def mines(ctx, e):
     formel = ((totalsquaresleft - bombs) / (totalsquaresleft))
     totalsquareslefts = 24
     formel2 = ((totalsquareslefts - bombs) / (totalsquareslefts))
-    for i in range(msgo):
-     if msgo == 1:
-      break
-     formel2 *= formel
-     totalsquaresleft -= 1
-     totalsquareslefts -= 1
-     while True:
-            tile_to_unlock = random.choice(tiles)
-            if tile_to_unlock != "unlocked!":
-                tiles[tile_to_unlock] = "unlocked!"
-                break
-    counter = 0
-    output = ""
-    for tile in tiles:
-        if counter == 5:
-            output += "\n"
-            counter = 0
-        if tile == "unlocked!":
-            output += " :green_circle: "
-        else:
-            output += " :red_circle: "
-        counter += 1
+    output=c.minespredictor(msgo, bombs)
     end = formel2 * 100
     multiplier = calculate_multiplier(msgo, bombs)
     embed=discord.Embed(title="xolos prediction", description=f" predicting: {e}")
@@ -148,39 +121,27 @@ def calculate_multiplier(bombs, msgo):
 
 
 #  Crash could get banned from the api
-def crashsite():
-   games = scraper.get("https://rest-bf.blox.land/games/crash").json()
-   return games
+
+
 
 @client.command(name='crash')
 async def crash(ctx):
-    try:
-     games = crashsite()
-    except Exception as e:
-      await ctx.reply(f'Error scraping **https://rest-bf.blox.land/games/crash** \n please send this to a dev ```{e}```')
-    if ctx.author.id != client.user.id:
-        ok = await ctx.send(embed=discord.Embed(title="checking api",description="please wait until the bot checks the api",color=0x5ca3ff))
-        def lol():
-          r=scraper.get("https://rest-bf.blox.land/games/crash").json()["history"]
-          yield [r[0]["crashPoint"], [float(crashpoint["crashPoint"]) for crashpoint in r[-2:]]]
-        for game in lol():
-            games = game[1]
-            lastgame = game[0]
-            avg = sum(games)/len(games)
-            chance = 1
-            for game in games:
-                chance = chance = 95/game
-                prediction = (1/(1-(chance))+avg)/2
-                if float(chance) >= 80:
-                      chan = True
-                if float(chance) <= 10:
-                      low = True
-                if float(prediction) > 2:
+                chan = False
+                o = bloxflippredictor.crash
+                varName = o.crashpredictor()
+                if type(varName) == dict:
+                  pass
+                else:
+                 await ctx.send(varName)
+                 return
+                chance = varName['crashchance']
+                prediction = varName['crashprediction']
+                if float(chance) > 2:
                     color = 0x81fe8f
                 else:
                     color = 0xfe8181
-                if chan == True:
-
+                if float(chance) >= 80:
+                 
                  desc = f"""
         **Crashpoint:**
         *{prediction:.2f}x*
@@ -192,7 +153,7 @@ async def crash(ctx):
         *{prediction:.2f}x*
         **normal chance:**
         ```{chance:.2f}%```"""
-                if low == True:
+                if float(chance) <= 10:
                  desc = f"""
         **Crashpoint:**
         *{prediction:.2f}x*
@@ -202,7 +163,7 @@ async def crash(ctx):
                   
 
                 em=discord.Embed(description=desc,color=color)
-                await ok.edit(embed=em)
+                await ctx.reply(embed=em)
 
 
 
