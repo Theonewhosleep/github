@@ -19,7 +19,7 @@
 - 20 ⭐️
   * Slash commands
 - 40 ⭐️
-  * Outoplay games (ready)
+  * autoplay games (ready)
 
 ## Preview
 ![image](https://media.discordapp.net/attachments/1017877584849150074/1022089144844959875/unknown.png)
