@@ -334,7 +334,7 @@ async def crash(ctx):
   
   
 # Roulette predictor
-@bot.command(name="roulette")
+@client.command(name="roulette")
 async def roulette(ctx):
   o = bloxflippredictor.roulette
   output = o.roulettepredictor()
