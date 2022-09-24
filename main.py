@@ -163,9 +163,21 @@ async def crash(ctx):
 
                 em=discord.Embed(description=desc,color=color)
                 await ctx.reply(embed=em)
-
-
-
+   
+  
+  
+# Roulette predictor
+@bot.command(name="roulette")
+async def roulette(ctx):
+  o = bloxflippredictor.roulette
+  output = o.roulettepredictor()
+  embed=discord.Embed(title="xolos prediction", description=f" predicting: roulette")
+  embed.add_field(name="roulette", value=output, inline=False)
+  await ctx.reply(embed=embed)
+  
+  
+  
+  
 #  Runs the token
 try:
   client.run(TOKEN)
