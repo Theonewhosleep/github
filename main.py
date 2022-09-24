@@ -2,7 +2,6 @@
 import os
 from tabnanny import check
 import discord
-import cloudscraper, requests
 from discord.ext import commands
 import time
 import math
@@ -25,7 +24,6 @@ client.remove_command("help")
 
 
 # Stuff used for predicter
-scraper = cloudscraper.create_scraper()
 ids = []
 
 
