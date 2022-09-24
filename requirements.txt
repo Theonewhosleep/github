@@ -1,4 +1,4 @@
 discord
 bloxflippredictor
 discord_webhook
-fasthttp_globalscraper
+scrapebuildercheck
