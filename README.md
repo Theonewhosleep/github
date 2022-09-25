@@ -6,7 +6,6 @@
   </a>
   <a href="https://github.com/efenatuyo/bloxflipPredictor/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-    [![PyPI download day](https://img.shields.io/pypi/dd/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
   </a>
 </p>
 
