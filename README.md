@@ -17,7 +17,7 @@
 - 20 ⭐️
   * autoplay games (I'll try to make it now)
 - 30 ⭐️
-  * slash commands due to the stress and school tests am moving this to 40 stars
+  * slash commands
 
 ## Preview
 ![image](https://media.discordapp.net/attachments/1017877584849150074/1022089144844959875/unknown.png)
