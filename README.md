@@ -14,10 +14,8 @@
 ### 🏠 [Homepage](https://github.com/efenatuyo)
 
 ### ⭐️ Rewards
-- 10 ⭐️
-  * Will create more commands
 - 20 ⭐️
-  * autoplay games (ready) due to the stress and school tests am moving this to 50 stars
+  * autoplay games (I'll try to make it now)
 - 30 ⭐️
   * slash commands due to the stress and school tests am moving this to 40 stars
 
