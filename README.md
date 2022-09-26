@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to Bloxflip Predictor 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-2.3.2-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-2.3.3-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/efenatuyo/bloxflipPredictor#README.md#" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
