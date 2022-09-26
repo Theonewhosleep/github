@@ -17,9 +17,9 @@
 - 10 ⭐️
   * Will create more commands
 - 20 ⭐️
-  * autoplay games (ready)
+  * autoplay games (ready) due to the stress and school tests am moving this to 50 stars
 - 30 ⭐️
-  * slash commands
+  * slash commands due to the stress and school tests am moving this to 40 stars
 
 ## Preview
 ![image](https://media.discordapp.net/attachments/1017877584849150074/1022089144844959875/unknown.png)
