@@ -15,7 +15,7 @@
 
 ### ⭐️ Rewards
 - 20 ⭐️
-  * autoplay games (I'll try to make it now)
+  * sorry to tell you but I could not make it work since bloxflip got cloudflare that blocks devices that dont get used by humans
 - 30 ⭐️
   * slash commands
 
